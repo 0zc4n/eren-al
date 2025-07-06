@@ -1,0 +1,323 @@
+body, .services, .services-section {
+  background: #111 !important;
+  color: #fff;
+}
+
+.services {
+  padding: 100px 0;
+  background: #f8f9fa;
+}
+
+.services-header {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.services-header h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #fff !important;
+  margin-bottom: 20px;
+}
+
+.services-header p {
+  font-size: 1.1rem;
+  color: #b0b0b0 !important;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+  margin-bottom: 80px;
+}
+
+.service-card {
+  background: #181818;
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border: 1px solid #232323;
+  position: relative;
+  overflow: hidden;
+  color: #b0b0b0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 540px;
+}
+
+.service-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #3498db, #2980b9);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover::before {
+  transform: scaleX(1);
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.service-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.service-card h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.service-description {
+  color: #7f8c8d;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.service-features {
+  margin-bottom: 25px;
+}
+
+.service-features h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.service-features ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.service-features li {
+  padding: 8px 0;
+  color: #7f8c8d;
+  position: relative;
+  padding-left: 25px;
+}
+
+.service-features li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #27ae60;
+  font-weight: bold;
+}
+
+.service-price {
+  margin-bottom: 16px;
+  margin-top: auto;
+}
+
+.price {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #3498db;
+  background: rgba(52, 152, 219, 0.1);
+  padding: 10px 20px;
+  border-radius: 25px;
+  display: inline-block;
+}
+
+.service-card .btn {
+  margin-top: 0;
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* Process Section */
+.process-section {
+  margin-bottom: 80px;
+}
+
+.process-section h3 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff !important;
+  margin-bottom: 50px;
+}
+
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+}
+
+.process-step {
+  text-align: center;
+  padding: 30px 20px;
+  background: #111 !important;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border: 1px solid #232323;
+  position: relative;
+  color: #b0b0b0;
+}
+
+.process-step::after {
+  content: '→';
+  position: absolute;
+  right: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.5rem;
+  color: #3498db;
+  z-index: 2;
+}
+
+.process-step:last-child::after {
+  display: none;
+}
+
+.process-step:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.step-number {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 0 auto 20px;
+}
+
+.process-step h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.process-step p {
+  color: #b0b0b0;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+/* Services CTA */
+.services-cta {
+  background: #111 !important;
+  color: #fff;
+  border-radius: 20px;
+  padding: 60px 40px;
+  text-align: center;
+  margin: 0 auto 40px auto;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.services-cta h3 {
+  color: #fff;
+  font-size: 2.1rem;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.services-cta p {
+  color: #b0b0b0;
+  font-size: 1.15rem;
+  margin-bottom: 28px;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cta-buttons .btn-primary {
+  background: #fff;
+  color: #111;
+}
+
+.cta-buttons .btn-primary:hover {
+  background: #232323;
+  color: #fff;
+}
+
+.cta-buttons .btn-secondary {
+  background: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+.cta-buttons .btn-secondary:hover {
+  background: #fff;
+  color: #111;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .services {
+    padding: 60px 0;
+  }
+  
+  .services-header h2 {
+    font-size: 2rem;
+  }
+  
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .service-card {
+    padding: 30px 20px;
+  }
+  
+  .process-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .process-step::after {
+    display: none;
+  }
+  
+  .services-cta {
+    padding: 40px 20px;
+  }
+  
+  .services-cta h3 {
+    font-size: 1.5rem;
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .cta-buttons .btn {
+    width: 100%;
+    max-width: 300px;
+  }
+} 
